@@ -1,0 +1,1 @@
+{"mappings":"AACcA,SAASC,cAAc,gBAC1BD,SAASC,cAAc","sources":["src/js/refs.js"],"sourcesContent":["const refs = {\n  searchForm: document.querySelector('#search-form'),\n  gallery: document.querySelector('.gallery'),\n};\nexport default refs;\n"],"names":["document","querySelector"],"version":3,"file":"index.25cf3ecf.js.map"}
