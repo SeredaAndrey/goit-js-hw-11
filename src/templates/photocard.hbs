@@ -1,21 +1,25 @@
 {{#each this.data.hits}}
-<a href="{{webformatURL}}">
   <div class='photo-card'>
-    <img src={{previewURL}} alt=`{{tags}}` loading='lazy' />
-    <div class='info'>
-      <p class='info-item'>
-        <b>Likes</b>{{likes}}
-      </p>
-      <p class='info-item'>
-        <b>Views</b>{{views}}
-      </p>
-      <p class='info-item'>
-        <b>Comments</b>{{comments}}
-      </p>
-      <p class='info-item'>
-        <b>Downloads</b>{{downloads}}
-      </p>
-    </div>
-  </div>
-  </a>
+    <a href="{{webformatURL}}">
+      <img src={{previewURL}} alt=`{{tags}}` loading='lazy' />
+      <div class='info'>
+        <p class='info-item'>
+          <b>Likes</b>
+          <span>{{likes}}</span>
+        </p>
+        <p class='info-item'>
+          <b>Views</b>
+          <span>{{views}}</span>
+        </p>
+        <p class='info-item'>
+          <b>Comments</b>
+          <span>{{comments}}</span>
+        </p>
+        <p class='info-item'>
+          <b>Downloads</b>
+          <span>{{downloads}}</span>
+        </p>
+      </div>
+    </a>
+  </div>  
 {{/each}}

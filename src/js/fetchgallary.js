@@ -22,7 +22,7 @@ export default class RestGalleryService {
       // parameter.page = this.page;
       // console.log(`${BASE_URL}?key=${key}&q=${this.searchQuery}`);
       const responce = await request.get(
-        `${BASE_URL}?key=${key}&q=${this.searchQuery}&image_type="photo"&page=${this.page}&orientation="horizontal"&safesearch="true"&per_page=40`
+        `${BASE_URL}?key=${key}&q=${this.searchQuery}&image_type=photo&page=${this.page}&orientation=horizontal&safesearch=true&per_page=40`
       );
       console.log(responce);
       this.increasePage();
@@ -34,6 +34,9 @@ export default class RestGalleryService {
   }
   increasePage() {
     this.page += 1;
+  }
+  clearPageNumber() {
+    this.page = 1;
   }
 
   get query() {
