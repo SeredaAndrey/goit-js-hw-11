@@ -41,6 +41,10 @@ refs.more.addEventListener('click', () => {
   restGalleryService.fetchArticles().then(insertMarkup);
 });
 
+refs.gallery.addEventListener('click', event => {
+  event.preventDefault();
+});
+
 function inputRequest(request) {
   restGalleryService.query = request;
   restGalleryService.fetchArticles().then(insertMarkup);
