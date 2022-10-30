@@ -4,6 +4,7 @@
 }
 
 .gallery {
+  margin-top: 50px;
   display: grid;
   max-width: 1140px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -18,10 +19,11 @@
   position: relative;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  transition: transform var(--animation-duration) var(--timing-function);
 }
 
-.photo-card img:hover {
-  transform: scale(1.03);
+.photo-card:hover {
+  transform: scale(1.04);
 }
 
 .photo-card img {
@@ -29,17 +31,19 @@
   height: 75%;
   width: 100%;
   object-fit: cover;
-  transition: transform var(--animation-duration) var(--timing-function);
 }
 
 .info {
   display: flex;
+  justify-content: space-around;
   font-size: 13px;
-  &-item {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .more-container {
   margin-top: 5px;

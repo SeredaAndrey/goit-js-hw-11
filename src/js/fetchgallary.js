@@ -24,7 +24,7 @@ export default class RestGalleryService {
       const responce = await request.get(
         `${BASE_URL}?key=${key}&q=${this.searchQuery}&image_type=photo&page=${this.page}&orientation=horizontal&safesearch=true&per_page=40`
       );
-      console.log(responce);
+      // console.log(responce);
       this.increasePage();
       return responce;
     } catch (error) {
@@ -37,6 +37,9 @@ export default class RestGalleryService {
   }
   clearPageNumber() {
     this.page = 1;
+  }
+  getPage() {
+    return this.page;
   }
 
   get query() {

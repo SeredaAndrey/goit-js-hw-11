@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 24px;
+  width: 150px;
+  // color: white;
+  cursor: pointer;
+  &.is-hidden {
+    display: none;
+  }
+}
+.button > .fa.is-hidden {
+  display: none;
+}

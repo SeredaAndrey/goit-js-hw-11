@@ -1,7 +1,11 @@
 .search {
   &-container {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
     background-color: blue;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
   }
   &-form {
     margin-left: auto;
